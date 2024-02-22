@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color:whitesmoke;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        background-color: rgb(214, 173, 180);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+    }
+    .header{
+        background-image: url('https://awsimages.detik.net.id/community/media/visual/2023/12/21/ilustrasi-ai_169.jpeg?w=600&q=90');
+        color: white;
+        width: 600px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="date"] {
+        width: calc(100% - 22px); /* Adjusting for date picker arrow */
+    }
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+    <h1>AI Tools Workshop Registration Form</h1>
+    <p> Workshop Date: 20/02/2024</p>
+    <p> Workshop Time: 11.00am to 1:00pm</p>
+    </div>
+    <form action="#" method="post">
+        <label for="fullName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+       
+        <label for="fullName">Last Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <div>
+        <label for="gender">Gender</label>
+        <input type="radio"  name= "male" value="male">Male</input>
+        <input type="radio"  name= "female" value="Female">Female</input>
+        </div>  
+        <br>
+        <label for="address">Address</label>
+        <textarea rows="3" cols="2" placeholder="Address with pincode"></textarea>
+        <label for="howDidYouHear">How did you hear about the workshop?</label>
+        <select id="howDidYouHear" name="howDidYouHear" required>
+            <option value="">Select One</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Word of Mouth">Word of Mouth</option>
+            <option value="Website">Website</option>
+            <option value="Friends"> By Friends</option>
+            <option value="Other">Other</option>
+        </select>
+        <div>
+        <label for="student">Are you currently a student?</label>
+        <input type="radio" id="studentYes" name="student" value="Yes">Yes</input>
+         <input type="radio" id="studentNo" name="student" value="No">No</input>
+        </div>
+        <br>
+        <label for="institution">Name of Institution (if student):</label>
+        <input type="text" id="institution" name="institution" required>
+        
+        <label for="educationLevel">Education</label>
+        <select id="educationLevel" name="educationLevel">
+        <option value="">Select One</option>
+        <option value="Undergraduate">Undergraduate</option>
+        <option value="Postgraduate">Postgraduate</option>
+        </select>
+        
+        <label for="Degree">Degree</label>
+        <select id="degree" name="degree" r>
+        <option value="">Select One</option>
+        <option value="B.E">B.E</option>
+        <option value="B.Arch">B.Arch</option>
+        <option value="B.tech">B.Tech</option>
+        <option value="B.Sc">B.SC</option>
+        <option value="B.C.A">B.C.A</option>
+        <option value="others">others</option>
+        </select>
+
+        <label for="Dept">Department</label>
+        <select id="dept" name="Department">
+        <option value="">Select One</option>
+        <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+        <option value="Electrical and communication  Engineering">Electrical and  communication Engineering</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Computer Science and Bussiness System">Computer Science and Bussiness System</option>
+        <option value="Computer Science and communication ">Computer Science and communication </option>
+        <option value="Architecture Design">Architecture Design</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="others">others</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>
